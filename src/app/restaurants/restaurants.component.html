@@ -1,20 +1,7 @@
-<h1>{{title}}</h1>
-<br>
-<br />
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Type</th>
-        </tr>
-    </thead>
-    <tr *ngFor="let rest of places">
-        <td>
-            <a [routerLink] = "['/comments', rest.id]">
-                {{rest.name}}
-            </a>
-        </td>
-        <td> {{rest.tipo}}</td>
-    </tr>
-</table>
-<br />
+<div *ngFor="let rest of places" class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title"> {{rest.name}} </h5>
+      <p class="card-text">{{rest.tipo}}</p>
+      <a [routerLink] = "['/comments', rest.id]" class="card-link"> get comments</a>
+    </div>
+  </div>
