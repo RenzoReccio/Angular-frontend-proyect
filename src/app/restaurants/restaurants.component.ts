@@ -14,7 +14,6 @@ export class RestaurantsComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
-    this.title = "This is our restaurants";
     this.dataService.getRestaurants()
       .subscribe((restaurants: IRestaurant[]) => this.places = restaurants);
   }
