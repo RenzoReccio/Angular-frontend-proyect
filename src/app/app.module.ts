@@ -7,6 +7,7 @@ import { RestaurantsModule } from './restaurants/restaurants.module';
 import { ShareModule } from './share/share.module';
 import { CoreModule } from './core/core.module';
 import { CommentsModule } from './comments/comments.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CommentsModule } from './comments/comments.module';
     RestaurantsModule,
     CommentsModule,
     CoreModule,
-    ShareModule
+    ShareModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

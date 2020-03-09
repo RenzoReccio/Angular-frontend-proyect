@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CommentsModule } from './comments.module';
+ import { CommentsComponent } from './comments.component';
 
 const routes: Routes = [
-    { path: 'comments/:id', component: CommentsModule, outlet:'commentsPi' }
+    { path: 'comments', component: CommentsComponent, outlet:'commentsPi' }
 ];
 
 @NgModule({
