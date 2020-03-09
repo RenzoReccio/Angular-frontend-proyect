@@ -13,10 +13,10 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
 
-  baseUrl: string = 'URL/';
+  baseUrl: string = 'assets/';
 
   getRestaurants(): Observable<IRestaurant[]>{
-    return this.http.get<IRestaurant[]>(this.baseUrl + "API_URL", )
+    return this.http.get<IRestaurant[]>(this.baseUrl + "places.json", )
         .pipe(
           catchError(this.handleError)
         )

@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "restaurantFront": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "restaurantFront"
+    }
+  },
+  "defaultProject": "restaurantFront",
+  "cli": {
+    "analytics": "1c4426c8-c805-4808-8055-1712a5c4378c"
+  }
 }

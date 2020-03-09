@@ -1,0 +1,22 @@
+[
+    {
+          "id": 1,
+          "name": "ted James",
+          "tipo": " Phoenix ",
+    },
+    {
+          "id": 2,
+          "name": "Michelle Thompson",
+          "tipo": "Los Angeles ",
+    },
+    {
+          "id": 3,
+          "name": "James Thomas",
+          "tipo": " Las Vegas ",
+    },
+    {
+          "id": 4,
+          "name": "Tina Adams",
+          "tipo": "Seattle",
+    }
+]

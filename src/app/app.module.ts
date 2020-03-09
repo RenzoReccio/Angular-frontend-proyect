@@ -6,14 +6,19 @@ import { AppComponent } from './app.component';
 import { RestaurantsModule } from './restaurants/restaurants.module';
 import { ShareModule } from './share/share.module';
 import { CoreModule } from './core/core.module';
+import { CommentsModule } from './comments/comments.module';
 
 @NgModule({
   declarations: [
-    AppComponent, RestaurantsModule, ShareModule, CoreModule
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RestaurantsModule,
+    CommentsModule,
+    CoreModule,
+    ShareModule
   ],
   providers: [],
   bootstrap: [AppComponent]
