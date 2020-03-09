@@ -2,21 +2,21 @@
     {
           "id": 1,
           "name": "ted James",
-          "tipo": " Phoenix ",
+          "tipo": " Phoenix "
     },
     {
           "id": 2,
           "name": "Michelle Thompson",
-          "tipo": "Los Angeles ",
+          "tipo": "Los Angeles "
     },
     {
           "id": 3,
           "name": "James Thomas",
-          "tipo": " Las Vegas ",
+          "tipo": " Las Vegas "
     },
     {
           "id": 4,
           "name": "Tina Adams",
-          "tipo": "Seattle",
+          "tipo": "Seattle"
     }
 ]
