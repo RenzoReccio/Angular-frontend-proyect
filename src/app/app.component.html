@@ -1,12 +1,16 @@
 <div class="grid">
     <div class="span-col-3">
-        Restaurant App
+        <div class="jumbotron">
+            <h1 class="display-4">Restaurant App</h1>
+          </div>
     </div>
     <div>
-        <router-outlet></router-outlet>
+        <app-restaurants></app-restaurants>
     </div>
     <div class="span-col-2">
         <router-outlet name="commentsPi"></router-outlet>
     </div>
-    <div class="span-col-3">This should contain the footer</div>
+    <div class="span-col-3" id="com">
+        <app-footer></app-footer>
+    </div>
   </div>

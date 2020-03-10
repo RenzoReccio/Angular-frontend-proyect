@@ -4,8 +4,8 @@ import { CommentsComponent } from './comments/comments.component';
 
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '/restaurants'},
-  { path: '**', pathMatch: 'full', redirectTo: '/restaurants' }, 
+  { path: '', pathMatch: 'full', redirectTo: '/'},
+  { path: '**', pathMatch: 'full', redirectTo: '/' }, 
   { path: '', component: CommentsComponent, outlet: "commentsPi"}
 ];
 

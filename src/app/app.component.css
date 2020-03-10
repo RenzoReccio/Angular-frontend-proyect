@@ -6,3 +6,8 @@
 .span-col-3{grid-column: span 3 / auto;}
 
 .span-col-2{grid-column: span 2 / auto;}
+
+#com{
+
+    background-color: cyan;
+}

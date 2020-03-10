@@ -8,6 +8,7 @@ import { ShareModule } from './share/share.module';
 import { CoreModule } from './core/core.module';
 import { CommentsModule } from './comments/comments.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterModule } from './footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     CommentsModule,
     CoreModule,
     ShareModule,
-    HttpClientModule
+    HttpClientModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
