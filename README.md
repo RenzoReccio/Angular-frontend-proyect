@@ -1,6 +1,8 @@
 # RestaurantFront
 
-This is kind of a demo proyect in Angular, it uses services from `https://github.com/RenzoReccio/restaurantBackv2` which is the backend for this proyect.
+This is kind of a demo proyect in Angular, it uses services from `https://github.com/RenzoReccio/restaurantBackv2` which is the backend for this proyect. 
+
+I called v2 because this is like a better version of my previous proyect `https://github.com/RenzoReccio/RestaurantProyectv1`
 
 ## Development server
 
