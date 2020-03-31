@@ -1,10 +1,14 @@
 export interface IRestaurant {
-    id: number;
+    _id: string;
     name: string;
-    tipo: string;
+    type: string;
+    _v : string;
 }
 
 export interface IComments {
+    _id : string,
     restaurantId: number;
-    comment: string;
+    username : string;
+    content: string;
+    _v : string
 }

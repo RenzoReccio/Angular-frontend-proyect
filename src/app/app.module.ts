@@ -9,6 +9,7 @@ import { CoreModule } from './core/core.module';
 import { CommentsModule } from './comments/comments.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterModule } from './footer/footer.module';
+import { ReactiveFormsModule}  from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterModule } from './footer/footer.module';
     CoreModule,
     ShareModule,
     HttpClientModule,
-    FooterModule
+    FooterModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

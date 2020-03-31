@@ -1,1 +1,22 @@
-<p>comments works!, you're lookin for restaurant with id : {{ id }}</p>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">{{title}}</h1>
+    </div>
+  </div>
+
+<div id="comment" *ngFor="let comm  of comments">
+    <p>{{comm.username}} :</p>
+    <p>{{comm.content}}</p>
+</div>
+
+<form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label >Username</label>
+      <input type="text" class="form-control" formControlName="username">
+    </div>
+    <div class="form-group">
+      <label >Content</label>
+      <input type="text" class="form-control" formControlName="content">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+ </form>

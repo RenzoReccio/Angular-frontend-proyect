@@ -1,7 +1,22 @@
-<div *ngFor="let rest of places" class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title"> {{rest.name}} </h5>
-      <p class="card-text">{{rest.tipo}}</p>
-      <a [routerLink] = "['/comments', rest.id]" class="card-link"> get comments</a>
+<div class="list-group">
+  <a *ngFor="let rest of places" [routerLink] = "['/comments', rest._id]" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1"> {{rest.name}}</h5>
     </div>
+    <p class="mb-1">{{rest.type}}</p>
+  </a>
+
+<form class="list-group-item" [formGroup]="restaurantForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label >Restaurant name:</label>
+    <input type="text" class="form-control" formControlName="name">
+  </div>
+  <div class="form-group">
+    <label >Type:</label>
+    <input type="text" class="form-control" formControlName="type">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 </div>
+
+
